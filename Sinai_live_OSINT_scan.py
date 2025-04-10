@@ -2,7 +2,7 @@
 import requests
 
 # STEP 1: Insert your NewsAPI key here
-API_KEY = "f7776cd2722f4a1f89167ead69038403"
+API_KEY = ""
 
 # STEP 2: Define region & threat keywords
 region_keywords = ["Sinai", "Rafah", "El Arish", "Sheikh Zuweid", "Egypt border"]
