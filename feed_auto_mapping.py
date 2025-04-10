@@ -3,7 +3,7 @@ import folium
 from geopy.geocoders import Nominatim
 import time
 
-API_KEY = "f7776cd2722f4a1f89167ead69038403"
+API_KEY = ""
 
 # Define threat terms
 threat_keywords = ["attack", "explosion", "ambush", "drone", "militant", "shelling", "smuggling"]
