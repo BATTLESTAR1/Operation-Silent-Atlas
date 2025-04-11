@@ -8,7 +8,7 @@ import time
 from datetime import datetime
 
 # Config
-API_KEY = "f7776cd2722f4a1f89167ead69038403"  # Replace with your NewsAPI key
+API_KEY = ""  # Replace with your NewsAPI key
 geolocator = Nominatim(user_agent="intel-live-feed")
 threat_keywords = ["attack", "explosion", "ambush", "drone", "militant", "shelling"]
 
