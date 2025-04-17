@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_37c63b79c0c55a6cbde738b416bc3ad2 {
+                #map_7ab4081716f62722cbd4063ad7a20660 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,18 +35,36 @@
                 .leaflet-container { font-size: 1rem; }
             </style>
         
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
 </head>
 <body>
     
     
-            <div class="folium-map" id="map_37c63b79c0c55a6cbde738b416bc3ad2" ></div>
+<div style="position: fixed;
+            bottom: 50px; left: 50px; width: 170px; height: 170px;
+            z-index:9999; font-size:14px;
+            background-color: white;
+            border:2px solid grey;
+            padding: 10px;">
+<b>🕒 Last Updated:</b><br>2025-04-17 11:19 UTC<br><br>
+Threat Summary:<br>
+🟥 HIGH: 0<br>
+🟧 MEDIUM: 1<br>
+🟩 LOW: 2<br>
+
+</div>
+    
+            <div class="folium-map" id="map_7ab4081716f62722cbd4063ad7a20660" ></div>
         
 </body>
 <script>
     
     
-            var map_37c63b79c0c55a6cbde738b416bc3ad2 = L.map(
-                "map_37c63b79c0c55a6cbde738b416bc3ad2",
+            var map_7ab4081716f62722cbd4063ad7a20660 = L.map(
+                "map_7ab4081716f62722cbd4063ad7a20660",
                 {
                     center: [28.5, 35.2],
                     crs: L.CRS.EPSG3857,
@@ -63,7 +81,7 @@
 
         
     
-            var tile_layer_b4967ef82e63772d25af7c8939747184 = L.tileLayer(
+            var tile_layer_98a251e334aebad2b6ad962f19aa8341 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -80,7 +98,144 @@
             );
         
     
-            tile_layer_b4967ef82e63772d25af7c8939747184.addTo(map_37c63b79c0c55a6cbde738b416bc3ad2);
+            tile_layer_98a251e334aebad2b6ad962f19aa8341.addTo(map_7ab4081716f62722cbd4063ad7a20660);
+        
+    
+            var marker_cluster_9bdf65f0d26021f241c763834c7628b8 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_907f497dc5db74b3b621802c923d547e = L.marker(
+                [15.01938565, 0.6601958496875799],
+                {
+}
+            ).addTo(marker_cluster_9bdf65f0d26021f241c763834c7628b8);
+        
+    
+            var icon_b82f35749ac1639d8c22ed6db720e949 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab7f42bf3d3ca7bf90c5b27c3123cbb4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5346180f6511087b87b68892157325cd = $(`<div id="html_5346180f6511087b87b68892157325cd" style="width: 100.0%; height: 100.0%;">                             <b>Western Sahel</b><br>                             <b>Threat:</b> LOW<br>                             <b>Headline:</b> Suspend France trip, Nigerians dying, Peter Obi tells Tinubu<br>                             <a href="https://punchng.com/suspend-france-trip-nigerians-dying-peter-obi-tells-tinubu/" target="_blank">Read more</a>                             </div>`)[0];
+                popup_ab7f42bf3d3ca7bf90c5b27c3123cbb4.setContent(html_5346180f6511087b87b68892157325cd);
+            
+        
+
+        marker_907f497dc5db74b3b621802c923d547e.bindPopup(popup_ab7f42bf3d3ca7bf90c5b27c3123cbb4)
+        ;
+
+        
+    
+    
+                marker_907f497dc5db74b3b621802c923d547e.setIcon(icon_b82f35749ac1639d8c22ed6db720e949);
+            
+    
+            var marker_1cf89f49a2162ebaa46185479d3c637e = L.marker(
+                [15.01938565, 0.6601958496875799],
+                {
+}
+            ).addTo(marker_cluster_9bdf65f0d26021f241c763834c7628b8);
+        
+    
+            var icon_f54af1a39a4c825149703167f03ea8c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3fb761d5d011df18314ae752d2367bf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5bc71a6ac8ebf2bca3606d5487dca188 = $(`<div id="html_5bc71a6ac8ebf2bca3606d5487dca188" style="width: 100.0%; height: 100.0%;">                             <b>Western Sahel</b><br>                             <b>Threat:</b> MEDIUM<br>                             <b>Headline:</b> More than 50 Christians slain in Nigeria's Plateau state<br>                             <a href="https://www.christiantoday.com/news/more-than-50-christians-slain-in-nigerias-plateau-state" target="_blank">Read more</a>                             </div>`)[0];
+                popup_e3fb761d5d011df18314ae752d2367bf.setContent(html_5bc71a6ac8ebf2bca3606d5487dca188);
+            
+        
+
+        marker_1cf89f49a2162ebaa46185479d3c637e.bindPopup(popup_e3fb761d5d011df18314ae752d2367bf)
+        ;
+
+        
+    
+    
+                marker_1cf89f49a2162ebaa46185479d3c637e.setIcon(icon_f54af1a39a4c825149703167f03ea8c9);
+            
+    
+            var marker_e2cfd5d9c0075fd51776d7cabbca1354 = L.marker(
+                [15.01938565, 0.6601958496875799],
+                {
+}
+            ).addTo(marker_cluster_9bdf65f0d26021f241c763834c7628b8);
+        
+    
+            var icon_5f4ae7d13bc3d23b757302c2a65f263f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f3ebef8c92c211d0b997d636df3cc8d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c08b07bde24ab496ffdb0e8644b34731 = $(`<div id="html_c08b07bde24ab496ffdb0e8644b34731" style="width: 100.0%; height: 100.0%;">                             <b>Western Sahel</b><br>                             <b>Threat:</b> LOW<br>                             <b>Headline:</b> Solar boom counters power shortages in Niger<br>                             <a href="https://www.thestar.com.my/tech/tech-news/2025/04/16/solar-boom-counters-power-shortages-in-niger" target="_blank">Read more</a>                             </div>`)[0];
+                popup_8f3ebef8c92c211d0b997d636df3cc8d.setContent(html_c08b07bde24ab496ffdb0e8644b34731);
+            
+        
+
+        marker_e2cfd5d9c0075fd51776d7cabbca1354.bindPopup(popup_8f3ebef8c92c211d0b997d636df3cc8d)
+        ;
+
+        
+    
+    
+                marker_e2cfd5d9c0075fd51776d7cabbca1354.setIcon(icon_5f4ae7d13bc3d23b757302c2a65f263f);
+            
+    
+            marker_cluster_9bdf65f0d26021f241c763834c7628b8.addTo(map_7ab4081716f62722cbd4063ad7a20660);
+        
+    
+            var heat_map_20d4b7467c305f075728fe99934aaa30 = L.heatLayer(
+                [[15.01938565, 0.6601958496875799, 1], [15.01938565, 0.6601958496875799, 2], [15.01938565, 0.6601958496875799, 1]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 7,
+  "radius": 15,
+  "blur": 10,
+}
+            );
+        
+    
+            heat_map_20d4b7467c305f075728fe99934aaa30.addTo(map_7ab4081716f62722cbd4063ad7a20660);
         
 </script>
 </html>
